@@ -32,7 +32,7 @@ Once the above pre-requisites are met, the following sequence can be used to ver
 8) Put down the Keystone device and leave the QR code subscreen.  At this point one should never have to display these QR codes again unless pairing has to be done again e.g. with a new phone.
 
 9) Save the text of the Keystone QRcodes (captured using your QR code scanner) into a file accessible by the code in this repository.  The resulting file should look like the [example file in this repo](sample_qr_codes.txt).
-*Notes: Since the BC-UR Use fountain code, it make a bit hard to collect all the qrcodes. so please collect all the qrcodes (m - m) and put into the file. make a video and get the qrcode one by one will be more helpful.*
+*Notes: Since the BC-UR Uses fountain code, it make a bit hard to collect all the qrcodes. so please collect all the qrcodes (m - m) and put into the file. making a video and get the qrcode one by one will be more helpful.*
 
 10) Run the verifier code against the file, e.g.<br>`./keystoneQRVerify.py --file sample_qr_codes.txt`
 
