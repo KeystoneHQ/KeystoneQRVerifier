@@ -8,8 +8,12 @@ Keystone currently using the BC-UR for QR Codes. Check out the link here: https:
 
 
 To run this the following pre-requisites must be fulfilled:
-1) Google Protobuf compiler.  On Ubuntu this can be installed by doing:<br>
+1) Google Protobuf compiler.  
+    - On Ubuntu this can be installed by doing:<br>
 `sudo apt install protobuf-compiler`
+   - On macOS this can be installed by doing:<br>
+` brew install protobuf`
+   
 2) Google Python API client for protobufs. Assuming python3, this can be installed by doing:<br>
 `pip3 install --upgrade google-api-python-client`
 3) Run (and install if necessary) `make` to build the python modules needed for Google proto3 support.
