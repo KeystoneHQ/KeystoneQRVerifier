@@ -1,21 +1,16 @@
 #!/usr/bin/python3
 
-# Decode the values that a Keystone device displays to the Cobo Vault app in order
+# Decode the values that a Keystone device displays to the Keystone Hardware Wallet app in order
 # to verify that only xpub and other non-secure information is allowed to leak from
-# a Cobo Vault device.
+# a Keystone device.
 
 
 import sys
 sys.path.insert(0, './py_protocol')
 
 import argparse
-import base64
 import gzip
-from payload_pb2 import Payload
-
-
-from ur import cbor_lite
-import base_pb2
+from py_protocol import base_pb2
 from ur.ur_decoder import URDecoder
 from ur.cbor_lite import CBORDecoder
 
@@ -24,7 +19,6 @@ def getMessageFromPayload(payload):
   message = base_pb2.Base()
   message.ParseFromString(payload)
   return message
-
 
 def getContentFromUR(content):
   decoder = URDecoder()

@@ -1,2 +1,3 @@
 __pycache__
-py_protocol
+py_protocol/*
+!py_protocol/.gitkeep
